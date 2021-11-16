@@ -19,6 +19,8 @@
   "bugs": {
     "url": "https://github.com/Justin7933/Symphony/issues"
   },
-  "homepage": "https://github.com/Justin7933/Symphony#readme"
+  "homepage": "https://github.com/Justin7933/Symphony#readme",
+  "dependencies": {
+    "concurrently": "^6.4.0"
+  }
 }
-
