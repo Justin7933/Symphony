@@ -1,2 +1,2 @@
 # Symphony
-// to startup the app, first run npm install IN THE ROOT DIRECTORY ONLY, DO NOT RUN NPM INSTALL IN CLIENT OR SERVER FOLDERS. Then run npm develope and both the backend server and React server will spin up.  
+// to startup the app, first run command "npm run install" IN THE ROOT DIRECTORY ONLY, DO NOT RUN NPM INSTALL IN CLIENT OR SERVER FOLDERS. Then run "npm run develop" and both the backend server and React server will spin up.  
