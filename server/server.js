@@ -15,8 +15,9 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI , {
-    useNewUrlParser: true,
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/symphony' , {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
 });
 
 //app.use(routes);
