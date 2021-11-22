@@ -19,7 +19,7 @@ const userSchema = new Schema({
     required: true,
     minlength: 5,
   },
-  notess: [
+  notes: [
     {
       type: Schema.Types.ObjectId,
       ref: 'Note',
