@@ -1,0 +1,43 @@
+import { gql } from '@apollo/client';
+
+export const QUERY_USER = gql`
+  query user($username: String!) {
+    user(username: $username) {
+      _id
+      username
+      email
+      notes {
+        _id
+        noteText
+        createdAt
+      }
+    }
+  }
+`;
+
+export const QUERY_NOTES = gql`
+  query getNotes {
+    notes {
+      _id
+      noteText
+      noteAuthor
+      createdAt
+    }
+  }
+`;
+
+export const QUERY_SINGLE_NOTE= gql`
+  query getSingleNOTE($NOTEId: ID!) {
+    note(noteId: $noteId) {
+      _id
+      noteText
+      noteAuthor
+      createdAt
+      comments {
+        _id
+        commentText
+        createdAt
+      }
+    }
+  }
+`;
