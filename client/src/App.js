@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
-import SingleNote from './pages/SingleNote';
+import SingleNote from './pages/singleNote';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
