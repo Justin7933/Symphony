@@ -72,7 +72,7 @@ const NoteForm = () => {
           >
             <div className="col-12 col-lg-9">
               <textarea
-                name="thoughtText"
+                name="noteText"
                 placeholder="Here's a new note..."
                 value={noteText}
                 className="form-input w-100"
