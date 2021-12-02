@@ -8,7 +8,7 @@ import CommentForm from '../components/CommentForm/CommentForm';
 
 import { QUERY_SINGLE_NOTE} from '../utils/queries';
 
-const SingleNote = () => {
+export const SingleNote = () => {
   // Use `useParams()` to retrieve value of the route parameter `:profileId`
   const { noteId } = useParams();
 
