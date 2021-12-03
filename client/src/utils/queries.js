@@ -27,7 +27,7 @@ export const QUERY_NOTES = gql`
 `;
 
 export const QUERY_SINGLE_NOTE= gql`
-  query getSingleNOTE($NOTEId: ID!) {
+  query getSingleNote($noteId: ID!) {
     note(noteId: $noteId) {
       _id
       noteText

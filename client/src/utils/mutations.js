@@ -33,7 +33,7 @@ export const ADD_NOTE = gql`
       createdAt
       comments {
         _id
-        noteText
+        commentText
       }
     }
   }
@@ -41,12 +41,12 @@ export const ADD_NOTE = gql`
 
 export const ADD_COMMENT = gql`
   mutation addComment(
-    $thoughtId: ID!
+    $noteId: ID!
     $commentText: String!
     $commentAuthor: String!
   ) {
     addComment(
-      noteId: $thoughtId
+      noteId: $noteId
       commentText: $commentText
       commentAuthor: $commentAuthor
     ) {

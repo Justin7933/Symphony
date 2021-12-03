@@ -12,7 +12,7 @@ const resolvers = {
     },
     notes: async (parent, { username }) => {
       const params = username ? { username } : {};
-      return NodeFilter.find(params).sort({ createdAt: -1 });
+      return Note.find(params).sort({ createdAt: -1 });
     },
     note: async (parent, { noteId }) => {
       return Note.findOne({ _id: noteId });
