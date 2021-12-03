@@ -23,7 +23,7 @@ const NoteList = ({ notes, title }) => {
             </div>
             <Link
               className="btn btn-primary btn-block btn-squared"
-              to={`/thoughts/${note._id}`}
+              to={`/notes/${note._id}`}
             >
               Join the discussion on this Note.
             </Link>
