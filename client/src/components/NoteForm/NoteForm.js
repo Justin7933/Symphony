@@ -8,7 +8,7 @@ import { QUERY_NOTES} from '../../utils/queries';
 import Auth from '../../utils/auth';
 
 const NoteForm = () => {
-  const [noteText, setnoteText] = useState('');
+  const [noteText, setNoteText] = useState('');
 
   const [characterCount, setCharacterCount] = useState(0);
 
@@ -38,7 +38,7 @@ const NoteForm = () => {
         },
       });
 
-      setnoteText('');
+      setNoteText('');
     } catch (err) {
       console.error(err);
     }
@@ -48,7 +48,7 @@ const NoteForm = () => {
     const { name, value } = event.target;
 
     if (name === 'noteText' && value.length <= 280) {
-      setnoteText(value);
+      setNoteText(value);
       setCharacterCount(value.length);
     }
   };
@@ -83,7 +83,7 @@ const NoteForm = () => {
 
             <div className="col-12 col-lg-3">
               <button className="btn btn-primary btn-block py-3" type="submit">
-                Add Thought
+                Add Note
               </button>
             </div>
             {error && (

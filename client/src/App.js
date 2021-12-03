@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
-import SingleNote from './pages/singleNote';
+import SingleNote from './pages/SingleNote';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
@@ -50,7 +50,7 @@ function App() {
             <Route exact path="/signup">
               <Signup />
             </Route>
-            <Route exact path="/thoughts/:thoughtId">
+            <Route exact path="/notes/:noteId">
               <SingleNote />
             </Route>
           </div>

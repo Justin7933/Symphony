@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const NoteList = ({ notes, title }) => {
   if (!notes.length) {
-    return <h3>No notes Yet</h3>;
+    return <h3>No Notes Yet</h3>;
   }
 
   return (
@@ -23,9 +23,9 @@ const NoteList = ({ notes, title }) => {
             </div>
             <Link
               className="btn btn-primary btn-block btn-squared"
-              to={`/notes/${note._id}`}
+              to={`/thoughts/${note._id}`}
             >
-              Join the discussion on this note.
+              Join the discussion on this Note.
             </Link>
           </div>
         ))}
