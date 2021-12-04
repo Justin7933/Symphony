@@ -52,36 +52,39 @@ const NoteForm = () => {
       setCharacterCount(value.length);
     }
   };
-
   return (
     <div>
-      <h3>What's on your techy mind?</h3>
+      <h3 className="mt-6 mb-6 border border-white bg-black flex text-3xl text-green-500 h-10 w-100 justify-center mr-50 font-mono">What's on your techy mind?</h3>
 
       {Auth.loggedIn() ? (
         <>
+        <div className="flex justify-center">
           <p
-            className={`m-0 ${
+            className={`m-0 font-bold text-pink-200 ${
               characterCount === 280 || error ? 'text-danger' : ''
             }`}
           >
             Character Count: {characterCount}/280
           </p>
+          </div>
           <form
             className="flex-row justify-center justify-space-between-md align-center"
             onSubmit={handleFormSubmit}
           >
+            <div className="mt-5 flex justify-center">
             <div className="col-12 col-lg-9">
               <textarea
                 name="noteText"
                 placeholder="Here's a new note..."
                 value={noteText}
-                className="form-input w-100"
+                className="form-input px-9 py-18 bg-black text-pink-200 "
                 style={{ lineHeight: '1.5', resize: 'vertical' }}
                 onChange={handleChange}
               ></textarea>
             </div>
-
-            <div className="col-12 col-lg-3">
+            </div>
+            
+            <div className="border border-white bg-black text-green-500 text-2xl flex rounded-full font-mono justify-center col-12 col-lg-3">
               <button className="btn btn-primary btn-block py-3" type="submit">
                 Add Note
               </button>
@@ -94,9 +97,15 @@ const NoteForm = () => {
           </form>
         </>
       ) : (
-        <p>
+        <p className="flex text-green-500 justify-center">
           You need to be logged in to share your thoughts. Please{' '}
-          <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
+          <div className="ml-1 mr-1">
+          <Link to="/login">login</Link>
+          </div>
+          or
+          <div className="ml-1 mr-1"> 
+          <Link to="/signup">signup.</Link>
+          </div>
         </p>
       )}
     </div>
