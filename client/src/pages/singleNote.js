@@ -27,7 +27,7 @@ const SingleNote = () => {
       <h3 className="card-header bg-dark text-pink-200 p-2 m-0">
         {note.noteAuthor} <br />
         <span style={{ fontSize: '1rem' }}>
-          had this thought on {note.createdAt}
+           {note.createdAt}
         </span>
       </h3>
       <div className="bg-light py-4">

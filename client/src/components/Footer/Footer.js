@@ -18,16 +18,16 @@ const Footer = () => {
           </div>
         )}
         <h4 className="text-pink-300">
-          Made with{' '}
+          Made by{' '}
           <span
             className="emoji"
             role="img"
             aria-label="heart"
             aria-hidden="false"
           >
-            ❤️
+            
           </span>{' '}
-          by the SYMPHONY tech team.
+          by the SYMPHONY team.
         </h4>
       </div>
     </footer>

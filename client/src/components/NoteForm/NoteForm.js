@@ -54,7 +54,7 @@ const NoteForm = () => {
   };
   return (
     <div>
-      <h3 className="mt-6 mb-6 border border-white bg-black flex text-3xl text-green-500 h-10 w-100 justify-center mr-50 font-mono">What's on your techy mind?</h3>
+      <h3 className="mt-6 mb-6 border border-white bg-black flex text-3xl text-green-500 h-10 w-100 justify-center mr-50 font-mono">Join the Conversation!</h3>
 
       {Auth.loggedIn() ? (
         <>
@@ -98,7 +98,7 @@ const NoteForm = () => {
         </>
       ) : (
         <p className="flex text-green-500 justify-center">
-          You need to be logged in to share your thoughts. Please{' '}
+          You need to be logged in to make a post. Please{' '}
           <div className="ml-1 mr-1">
           <Link to="/login">login</Link>
           </div>

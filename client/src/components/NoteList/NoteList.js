@@ -20,7 +20,7 @@ const NoteList = ({ notes, title }) => {
               </div>
               <div className="mb-5 mt-5 border font-bold text-green-500 rounded-full h-10 w-50 bg-black flex items-center justify-center font-mono">
               <span style={{ fontSize: '1rem' }}>
-                had this thought on {note.createdAt}
+                Posted on {note.createdAt}
               </span>
               </div>
             </h4>
