@@ -41,7 +41,7 @@ const CommentForm = ({ noteId }) => {
 
   return (
     <div className="">
-      <h4 className="mb-5 mt-5 border font-bold text-green-500 rounded-full h-10 w-50 bg-black flex items-center justify-center font-mono">What is your opinion on this thought?</h4>
+      <h4 className="mb-5 mt-5 border font-bold text-green-500 rounded-full h-10 w-50 bg-black flex items-center justify-center font-mono">What is your opinion on this?</h4>
 
       {Auth.loggedIn() ? (
         <>
@@ -77,7 +77,7 @@ const CommentForm = ({ noteId }) => {
         </>
       ) : (
         <p className="mb-5 mt-5 border font-bold text-green-500 rounded-full h-10 w-50 bg-black flex items-center justify-center font-mono">
-          You need to be logged in to share your thoughts. Please{' '}
+          You need to be logged in to share your ideas. Please{' '}
           <div className="ml-1 mr-1">
           <Link to="/login">login</Link>
           </div>
