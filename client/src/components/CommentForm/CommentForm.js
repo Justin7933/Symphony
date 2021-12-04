@@ -40,18 +40,18 @@ const CommentForm = ({ noteId }) => {
   };
 
   return (
-    <div>
-      <h4>What are your thoughts on this thought?</h4>
+    <div className="">
+      <h4 className="mb-5 mt-5 border font-bold text-green-500 rounded-full h-10 w-50 bg-black flex items-center justify-center font-mono">What is your opinion on this thought?</h4>
 
       {Auth.loggedIn() ? (
         <>
           <p
-            className={`m-0 ${
-              characterCount === 280 || error ? 'text-danger' : ''
+            className={`m-0 font-bold text-pink-200 ${
+              characterCount === 280 || error ? 'text-pink' : ''
             }`}
           >
             Character Count: {characterCount}/280
-            {error && <span className="ml-2">{error.message}</span>}
+            {error && <span className="ml-2 font-bold text-pink-200">{error.message}</span>}
           </p>
           <form
             className="flex-row justify-center justify-space-between-md align-center"
@@ -62,23 +62,29 @@ const CommentForm = ({ noteId }) => {
                 name="commentText"
                 placeholder="Add your comment..."
                 value={commentText}
-                className="form-input w-100"
-                style={{ lineHeight: '1.5', resize: 'vertical' }}
+                className="form-input px-8 bg-black text-pink-200"
+                style={{ lineHeight: '2', resize: 'vertical' }}
                 onChange={handleChange}
               ></textarea>
             </div>
 
             <div className="col-12 col-lg-3">
-              <button className="btn btn-primary btn-block py-3" type="submit">
+              <button className="border border-black rounded-full bg-black text-green-400 h-15 font-mono btn btn-primary btn-block py-3" type="submit">
                 Add Comment
               </button>
             </div>
           </form>
         </>
       ) : (
-        <p>
+        <p className="mb-5 mt-5 border font-bold text-green-500 rounded-full h-10 w-50 bg-black flex items-center justify-center font-mono">
           You need to be logged in to share your thoughts. Please{' '}
-          <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
+          <div className="ml-1 mr-1">
+          <Link to="/login">login</Link>
+          </div>
+           or
+           <div className="ml-1 mr-1"> 
+           <Link to="/signup">signup.</Link>
+           </div>
         </p>
       )}
     </div>

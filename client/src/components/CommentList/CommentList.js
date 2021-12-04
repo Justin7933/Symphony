@@ -1,13 +1,13 @@
 
 const CommentList = ({ comments = [] }) => {
     if (!comments.length) {
-      return <h3>No Comments Yet</h3>;
+      return <h3 className="text-pink-200">No Comments Yet</h3>;
     }
   
     return (
       <>
         <h3
-          className="p-5 display-inline-block"
+          className="p-5 display-inline-block font-bold text-pink-200"
           style={{ borderBottom: '1px dotted #1a1a1a' }}
         >
           Comments
@@ -16,7 +16,7 @@ const CommentList = ({ comments = [] }) => {
           {comments &&
             comments.map((comment) => (
               <div key={comment._id} className="col-12 mb-3 pb-3">
-                <div className="p-3 bg-dark text-light">
+                <div className="p-3 bg-dark text-pink-200">
                   <h5 className="card-header">
                     {comment.commentAuthor} commented{' '}
                     <span style={{ fontSize: '0.825rem' }}>

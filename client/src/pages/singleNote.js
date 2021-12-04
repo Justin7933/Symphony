@@ -24,7 +24,7 @@ const SingleNote = () => {
   }
   return (
     <div className="my-3">
-      <h3 className="card-header bg-dark text-light p-2 m-0">
+      <h3 className="card-header bg-dark text-pink-200 p-2 m-0">
         {note.noteAuthor} <br />
         <span style={{ fontSize: '1rem' }}>
           had this thought on {note.createdAt}
@@ -32,7 +32,7 @@ const SingleNote = () => {
       </h3>
       <div className="bg-light py-4">
         <blockquote
-          className="p-4"
+          className="p-4 font-bold text-pink-200"
           style={{
             fontSize: '1.5rem',
             fontStyle: 'italic',
