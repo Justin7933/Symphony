@@ -32,9 +32,9 @@ I can discuss my intrests and hobbies with other people
 *Here* is the slideshow: https://docs.google.com/presentation/d/1PCPlcdKhNn6Gd1VdCE_tomKr3Bm5iQ-feZgXSTAncUA/edit#slide=id.gf70525b4a8_0_0<p>
 
 ## Screenshots
-Dashboard: ![image](https://user-images.githubusercontent.com/84878209/136660765-12d81d32-46c3-4ce4-8889-f69e1bb81192.png)
+
 Loggedin Dashboard: ![project3sc2](https://user-images.githubusercontent.com/84878209/144714049-4f785681-1035-4083-a976-19cf2967d36e.png)
-=======
+
 Dashboard: ![project3sc1](https://user-images.githubusercontent.com/84878209/144713962-7ac61345-1bd5-490c-a55e-94fcf58d2944.png)
 
 
