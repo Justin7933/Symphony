@@ -15,7 +15,7 @@ const Header = () => {
           <Link className="text-light" to="/">
             <h1 className="h-1 italic text-primary ml-20 text-4xl font-bold p-2 text-green-500 rounded-full align-text-top font-mono">Symphony</h1>
           </Link>
-          <p className="border mt-10 font-bold text-green-500 text-4xl rounded-full bg-black flex items-center justify-center font-mono">Get into the mind of a programmer.</p>
+          <p className="border mt-10 font-bold text-green-500 text-4xl rounded-full bg-black flex items-center justify-center font-mono">Join the Conversation</p>
         </div>
         <div>
           {Auth.loggedIn() ? (
